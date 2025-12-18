@@ -1,3 +1,4 @@
-images/.gitkeep
-css/.gitkeep
-js/.gitkeep
+*
+css/
+js/
+images/
