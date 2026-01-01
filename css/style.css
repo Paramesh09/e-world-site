@@ -200,7 +200,6 @@
     /* adjust logo size */
     height: auto;
     /* keeps aspect ratio */
-
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -222,6 +221,55 @@
     color: var(--bs-white);
     background: var(--bs-primary);
 }
+
+.bg-light-blue {
+    background-color: #eef6ff; /* soft light blue */
+}
+
+.bg-dark-teal {
+    background-color: #0f6f68;
+}
+
+.bg-light-teal {
+    background-color: #e9f4f3;
+}
+
+.service-box {
+    padding: 40px 30px;
+    min-height: 360px;
+}
+
+.service-box h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-image img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    padding: 6px;
+}
+
+.service-box p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+    .service-box {
+        min-height: auto;
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
