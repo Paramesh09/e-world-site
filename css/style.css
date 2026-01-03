@@ -198,7 +198,7 @@
 .logo-img {
     width: 165px;
     /* adjust logo size */
-    height: auto;
+    height: 100px;
     /* keeps aspect ratio */
 }
 
@@ -263,6 +263,117 @@
     line-height: 1.7;
 }
 
+.inner-page .hero-header {
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+/* Container */
+.brand-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Logo */
+.logo-img {
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Text wrapper */
+.brand-text-wrap {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+/* Main brand text */
+.brand-text {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-weight: 800;
+}
+
+/* Text styles */
+.brand-eworld {
+    font-size: 30px;
+    color: #2f6fb3;
+}
+.brand-e {
+    color: #4ea44f;   /* green for "E" */
+}
+.brand-publish {
+    font-size: 30px;
+    color: #2f6fb3;
+    font-weight: 600;
+}
+
+.partner-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.partner-icon {
+    width: 70px;
+    height: 70px;
+    background: #e9f2ff;
+    color: #2f6fb3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 15px;
+}
+
+.partner-role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4ea44f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.partner-card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.partner-card a:hover {
+    color: #2f6fb3;
+    text-decoration: underline;
+}
+
+
+.brand-services {
+    font-size: 30px;
+    color: #4ea44f;
+    font-weight: 700;
+}
+
+/* Tagline */
+.brand-tagline {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #555;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+
 @media (max-width: 991px) {
     .service-box {
         min-height: auto;
@@ -324,6 +435,53 @@
     height: 100%;
     background: var(--bs-primary);
     z-index: -1;
+}
+
+/* Common button styles */
+.header-carousel .owl-prev,
+.header-carousel .owl-next {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 10;
+}
+
+/* Right button */
+.header-carousel .owl-next {
+    right: -20px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .header-carousel .owl-prev {
+        left: 5px;
+    }
+    .header-carousel .owl-next {
+        right: 5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .header-carousel .owl-prev,
+    .header-carousel .owl-next {
+        width: 38px;
+        height: 38px;
+        top: 90%;
+    }
+
+    .header-carousel .owl-prev {
+        left: 40%;
+    }
+
+    .header-carousel .owl-next {
+        right: 40%;
+    }
 }
 
 .header-carousel .owl-dots {
