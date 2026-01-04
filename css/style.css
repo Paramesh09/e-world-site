@@ -196,10 +196,9 @@
 }
 
 .logo-img {
-    width: 165px;
-    /* adjust logo size */
-    height: 100px;
-    /* keeps aspect ratio */
+    width: 3000px;
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar .navbar-nav .nav-link:hover,
